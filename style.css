@@ -1,94 +1,192 @@
 /* Common Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    outline: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
 }
 
 /* 1ram = 16px */
 html {
-    /* Brought the value of 1rem to 10px */
-    font-size: 62.5%; 
-    
+  /* Brought the value of 1ram to 10px */
+  font-size: 62.5%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* End Of Common Styles */
 
 /* Mouse Circle */
 .mouse-circle,
-.mouse-dot{
-    border-radius: 50%;
-    position: fixed;
-    z-index: 300;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+.mouse-dot {
+  border-radius: 50%;
+  position: fixed;
+  z-index: 300;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 .mouse-circle {
-    width: 6rem;
-    height: 6rem;
-    border: 0.1rem solid #c7a622;
-    animation: mouseCircleAnim 10s infinite linear;
-    
+  width: 6rem;
+  height: 6rem;
+  border: 0.1rem solid #c7a622;
+  animation: mouseCircleAnim 10s infinite linear;
 }
 
-@keyframes mouseCircleAnim{
-    0%{
-        width: 6rem;
-        height:6rem;
-    }
-    25%{
-        width: 8rem;
-        height:8rem;
-    }
-    35%{
-        width: 4rem;
-        height:4rem;
-    }
-    70%{
-        width: 8rem;
-        height:8rem;
-    }100%{
-        width: 6rem;
-        height:6rem;
-    }
+@keyframes mouseCircleAnim {
+  0% {
+    width: 6rem;
+    height: 6rem;
+  }
+  25% {
+    width: 8rem;
+    height: 8rem;
+  }
+  35% {
+    width: 4rem;
+    height: 4rem;
+  }
+  70% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 .mouse-dot {
-    width: 0.5rem;
-    height: .5rem;
-    background-color: #9b0e0e;
-    animation: mouseDotAnim 10s infinite linear;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #9b0e0e;
+  animation: mouseDotAnim 10s infinite linear;
 }
 
 @keyframes mouseDotAnim {
-    0%{
-        width:.5rem;
-        height:.5rem;
-    }
-    55%{
-        width:1.5rem;
-        height:1.5rem;
-    }
-    100%{
-        width:.5rem;
-        height:.5rem;
-    }
+  0% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  55% {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  100% {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
 }
 /* End of Mouse circle */
 
 /* Page BG */
-.page-bg{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+.page-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(images/backg.webp) center no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 /* End of Page BG */
+
+/* Section 1 */
+.section-1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+/* Logo */
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* End of Logo */
+
+/* Animated Circles */
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.circle {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background-color: red;
+  align-self: center;
+  justify-self: center;
+  opacity: .5;
+}
+.circle-1 {
+  background: url(images/moon.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: .5rem dotted #a14b1a;
+}
+.circle-2 {
+  background: url(images/parachute.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: .5rem dotted #ffbd07;
+}
+.circle-3 {
+  background: url(images/nature.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: 1rem double #9b0e0e;
+}
+.circle-4 {
+  background: url(images/code.jpg) center no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border: .7rem double #fff;
+}
+.main-circle {
+  width: 55rem;
+  height: 55rem;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.main-circle img {
+  mix-blend-mode: color-dodge;
+}
+/* End of Animated Circles */
+
+/* Featured Text */
+.featured-text {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  width: 0;
+  word-wrap: break-word;
+  line-height: 3.5;
+  position: sticky;
+  top: 0;
+}
+.featured-text-1 {
+  margin: 0 auto 0 10rem;
+}
+.featured-text-2 {
+  margin: 0 10rem 0 auto;
+}
+/* End of Featured Text */
+
+/* End of Section 1 */
