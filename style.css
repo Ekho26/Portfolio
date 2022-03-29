@@ -133,6 +133,10 @@ html {
   align-self: center;
   justify-self: center;
   opacity: .5;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 2s, top 2s;
 }
 .circle-1 {
   background: url(images/moon.jpg) center no-repeat;
@@ -159,14 +163,18 @@ html {
   border: .7rem double #fff;
 }
 .main-circle {
-  width: 55rem;
-  height: 55rem;
+  width: 43rem;
+  height: 43rem;
   position: absolute;
   overflow: hidden;
   border-radius: 50%;
 }
 .main-circle img {
   mix-blend-mode: color-dodge;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 2s, top 2s;
 }
 /* End of Animated Circles */
 
