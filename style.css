@@ -21,11 +21,13 @@ html {
   /* Brought the value of 1ram to 10px */
   font-size: 62.5%;
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /* End Of Common Styles */
 
 /* Mouse Circle */
@@ -38,6 +40,7 @@ html {
   opacity: 0;
   pointer-events: none;
 }
+
 .mouse-circle {
   width: 6rem;
   height: 6rem;
@@ -50,18 +53,22 @@ html {
     width: 6rem;
     height: 6rem;
   }
+
   25% {
     width: 8rem;
     height: 8rem;
   }
+
   35% {
     width: 4rem;
     height: 4rem;
   }
+
   70% {
     width: 8rem;
     height: 8rem;
   }
+
   100% {
     width: 6rem;
     height: 6rem;
@@ -80,15 +87,18 @@ html {
     width: 0.5rem;
     height: 0.5rem;
   }
+
   55% {
     width: 1.5rem;
     height: 1.5rem;
   }
+
   100% {
     width: 0.5rem;
     height: 0.5rem;
   }
 }
+
 /* End of Mouse circle */
 
 /* Page BG */
@@ -100,6 +110,7 @@ html {
     url(images/backg.webp) center no-repeat;
   background-size: cover;
 }
+
 /* End of Page BG */
 
 /* Section 1 */
@@ -108,6 +119,7 @@ html {
   width: 100%;
   height: 100vh;
 }
+
 /* Logo */
 .logo {
   position: absolute;
@@ -117,6 +129,7 @@ html {
   text-transform: uppercase;
   color: #fff;
 }
+
 /* End of Logo */
 
 /* Animated Circles */
@@ -130,6 +143,7 @@ html {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+
 .circle {
   width: 22rem;
   height: 22rem;
@@ -143,6 +157,7 @@ html {
   left: 0;
   transition: left 2s, top 2s;
 }
+
 .circle-1 {
   background: url(images/moon.jpg) center no-repeat;
   background-size: cover;
@@ -150,6 +165,7 @@ html {
   border: .5rem dotted #a14b1a;
   margin-left: -10rem;
 }
+
 .circle-2 {
   background: url(images/parachute.jpg) center no-repeat;
   background-size: cover;
@@ -157,6 +173,7 @@ html {
   border: .5rem dotted #ffbd07;
   margin-right: -10rem;
 }
+
 .circle-3 {
   background: url(images/nature.jpg) center no-repeat;
   background-size: cover;
@@ -164,6 +181,7 @@ html {
   border: 1rem double var(--darkRed);
   margin-left: -10rem;
 }
+
 .circle-4 {
   background: url(images/code.jpg) center no-repeat;
   background-size: cover;
@@ -171,6 +189,7 @@ html {
   border: .7rem double #fff;
   margin-right: -10rem;
 }
+
 .main-circle {
   width: 43rem;
   height: 43rem;
@@ -192,6 +211,7 @@ html {
   left: 0;
   transition: left 2s, top 2s;
 }
+
 /* End of Animated Circles */
 
 /* Featured Text */
@@ -205,12 +225,15 @@ html {
   position: sticky;
   top: 0;
 }
+
 .featured-text-1 {
   margin: 0 auto 0 10rem;
 }
+
 .featured-text-2 {
   margin: 0 10rem 0 auto;
 }
+
 /* End of Featured Text */
 
 /* Main Button */
@@ -226,7 +249,7 @@ html {
   overflow: hidden;
 }
 
-.main-btn-content{
+.main-btn-content {
   width: 100%;
   height: 100%;
   border: .2rem dotted #e7be08;
@@ -235,7 +258,7 @@ html {
   transition: transform .2s, border .2s;
 }
 
-.main-btn:hover .main-btn-content{
+.main-btn:hover .main-btn-content {
   transform: rotate(60deg);
   border: 0.2rem dotted var(--darkRed);
   transition: transform .2s .5s, border .2s;
@@ -249,19 +272,19 @@ html {
   border: .1rem solid #fff;
 }
 
-.main-btn-line:first-child{
+.main-btn-line:first-child {
   transform: rotateZ(-45deg) translateX(-0.65rem);
   transform-origin: left center;
   border-right: none;
 }
 
-.main-btn-line:nth-child(2){
+.main-btn-line:nth-child(2) {
   transform: rotateZ(45deg) translateX(.65rem);
   transform-origin: right center;
   border-left: none;
 }
 
-.main-btn-line:nth-child(3){
+.main-btn-line:nth-child(3) {
   transform: rotateZ(90deg) translateX(.5rem);
   border-left: none;
 }
@@ -279,22 +302,24 @@ html {
   position: absolute;
   width: 0;
   height: 0;
-  background-color:#e7be08;
+  background-color: #e7be08;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: rippleAnim 0.5s forwards;
-} 
+}
 
 @keyframes rippleAnim {
-  0%{
-    width:0%;
-    height:0%;
+  0% {
+    width: 0%;
+    height: 0%;
   }
-  100%{
-    width:210%;
-    height:200%;
+
+  100% {
+    width: 210%;
+    height: 200%;
   }
 }
+
 /* End of Main Button */
 
 /* End of Section 1 */
